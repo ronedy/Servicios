@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/CardViewFollowers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="18dp"
+    cardview:cardElevation="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp">
+
+
+
+    <!--<FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="10dp"
+         android:background="@color/colorPrimary"
+         >-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        />
+
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="105dp"
+    android:layout_marginLeft="20dp"
+    android:src="@drawable/ic_library_books_black_24dp"/>
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="20dp"
+    android:src="@drawable/ic_edit_location_black_24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_phone_iphone_black_24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/ic_favorite_black_24dp"/>
+
+    <TextView
+        android:id="@+id/cardFollowerUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="idUsuario"
+        android:visibility="gone"
+        android:textSize="15sp"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/cardFolloweLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:layout_gravity="bottom"
+
+        >
+
+
+        <TextView
+            android:id="@+id/cardFollowerNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nombre Apellido"
+            android:textAlignment="center"
+
+            android:textSize="20sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cardFollowerDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion"
+                android:layout_marginLeft="30dp"
+
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/cardFollowerTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:layout_marginTop="4dp"
+
+                android:textSize="15sp"
+                android:layout_marginLeft="30dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            >
+
+            <TextView
+            android:layout_marginTop="7dp"
+            android:id="@+id/cardFollowersPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+
+            android:textSize="15dp"
+            />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/cardFollowersUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="0"
+
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tageo"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:textAlignment="center"
+                android:text="Usuario"
+                android:background="@drawable/boton_redondo_gris"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--</FrameLayout>-->
+
+
+</android.support.v7.widget.CardView>

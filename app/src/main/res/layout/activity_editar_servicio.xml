@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <TextView
+            android:id="@+id/perfilServicioIdUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Usuario"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/heading"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/perfilServicioIdServicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Usuario"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/heading"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            cardview:cardCornerRadius="20dp"
+            cardview:cardElevation="10dp"
+            android:background="@color/colorAccent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/editarServicioNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo de servicio"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:maxLength="25"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textAlignment="center"
+
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Publicante"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        />
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/editarServicioImagenPerfil"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/editarboton"
+                        app:civ_border_width="5dp"
+                        app:civ_border_color="@color/blanco"
+                        />
+
+                    <TextView
+                        android:id="@+id/editarServicioPublicante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="18dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#000000"
+                        android:hint="Nombre Apellido"
+                        android:fontFamily="sans-serif"
+                        />
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Descripcion"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editarServicioDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18dp"
+                        android:maxLength="240"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#000000"
+                        android:hint="Describe lo que haces"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disponibilidad"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+
+                        />
+
+                    <!--
+
+                    <EditText
+                        android:id="@+id/servicioDisponibilidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#000000"
+                        android:hint="Diariamente... fin de semana..."
+                        android:fontFamily="sans-serif"
+                        />
+
+                        -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="25dp">
+                        <CheckBox
+                            android:id="@+id/echeckDomingo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="D"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckLunes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="L"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckMartes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="M"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckMiercoles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="M"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckJueves"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="J"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckViernes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="V"/>
+
+                        <CheckBox
+                            android:id="@+id/echeckSabado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="S"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Categoria"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        />
+
+                    <Spinner
+                        android:id="@+id/editarServicioCategoria"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Categoria"
+                        android:entries="@array/categorias"
+
+                        android:fontFamily="sans-serif"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Horario"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editarServicioHorario"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:maxLength="25"
+                        android:textColor="#000000"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="7:00 a.m. - 8:00 p.m."
+                        android:fontFamily="sans-serif"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editarServicioDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginLeft="10dp"
+                        android:maxLength="50"
+                        android:hint="Dirección"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="23dp"
+                    cardview:cardCornerRadius="20dp"
+                    android:background="@color/colorAccent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Personaliza tu servicio (color)"
+                        android:textColor="@color/heading"
+                        android:textSize="20dp"
+                        />
+
+                    <Spinner
+                        android:id="@+id/editarServicioColor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Categoria"
+                        android:entries="@array/colores"
+
+                        android:fontFamily="sans-serif"/>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                android:id="@+id/btnEditarServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar cambios"
+                android:textColor="@color/blanco"
+                android:background="@drawable/boton_redondo_celeste"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Eliminar servicio"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_redondo_rojo"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="75dp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

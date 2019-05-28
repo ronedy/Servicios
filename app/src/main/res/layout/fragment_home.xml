@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/boton_redondo_gris"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_black_24dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"/>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Personas"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="20dp"
+
+          android:textSize="20dp"
+          />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerviewSeguidores"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="7dp"
+          android:layout_marginRight="7dp"
+          android:layout_marginTop="9dp"
+          android:layout_marginBottom="60dp"
+          />
+
+
+
+
+
+  </LinearLayout>
+
+</RelativeLayout>

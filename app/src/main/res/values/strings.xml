@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Servicios</string>
+
+    <string name="facebook_app_id">2311406192467167</string>
+    <string name="fb_login_protocol_scheme">fb2311406192467167</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string-array name="categorias">
+        <item>Belleza</item>
+        <item>Educacion</item>
+        <item>Electricidad</item>
+        <item>Limpieza</item>
+        <item>Reparacion</item>
+        <item>Salud</item>
+        <item>Seguridad</item>
+        <item>Tecnologia</item>
+        <item>Transporte</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="colores">
+        <item>Amarillo</item>
+        <item>Celeste</item>
+        <item>Naranja</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Violeta</item>
+    </string-array>
+
+</resources>

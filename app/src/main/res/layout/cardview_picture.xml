@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pictureCard"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    cardview:cardCornerRadius="6dp"
+    cardview:cardElevation="5dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="20dp"
+    >
+
+
+
+   <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        >-->
+    <TextView
+        android:id="@+id/cardviewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        />
+
+        <LinearLayout
+            android:id="@+id/personalizarColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            >
+
+
+
+            <TextView
+                android:id="@+id/cardviewNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kevin Moscoso"
+                android:textColor="@color/blanco"
+                android:textSize="25sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cardviewDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/cardviewIdUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="idUsuario"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/cardviewIdServicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="idServicio"
+                    android:textColor="@color/blanco"
+                    android:visibility="gone"
+                    android:textSize="15sp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:id="@+id/cardviewNombreUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+   <!--</FrameLayout>-->
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/menuBuscar"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Buscar"
+            />
+
+        <item
+
+            android:id="@+id/menuHome"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Personas"
+            />
+
+        <item
+
+            android:id="@+id/menuYo"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Yo"
+            />
+
+    </group>
+
+
+    <item android:title="Otros">
+
+
+        <menu>
+
+            <item
+
+                android:id="@+id/MenuNuevo"
+                android:icon="@drawable/ic_control_point_black_24dp"
+                android:title="Nuevo Servicio"
+                />
+
+
+            <item
+
+                android:id="@+id/acercaDe"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="Acerca de"
+                />
+
+           <!-- <item
+
+                android:id="@+id/Menufoto"
+                android:icon="@drawable/ic_add_a_photo_black_24dp"
+                android:title="Yo"
+                /> -->
+
+            <item
+
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/ic_remove_circle_outline_black_24dp"
+                android:title="Cerrar sesión"
+                />
+
+        </menu>
+
+
+    </item>
+
+
+
+
+</menu>
